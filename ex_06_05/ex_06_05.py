@@ -4,8 +4,8 @@ Convert the extracted value to a floating point number and print it out.
 """
 
 text = "X-DSPAM-Confidence:    0.8475"
-pos = text.find(" ")
-num_str = text[pos:]
+pos = text.find(":")
+num_str = text[pos+1:]
 strip_str = num_str.strip()
 num = float(strip_str)
 
